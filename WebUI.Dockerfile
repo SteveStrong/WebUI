@@ -30,6 +30,10 @@ CMD ["nginx", "-g", "daemon off;"]
 # docker build -t webui -f WebUI.Dockerfile  .
 # docker run -p 2001:80 -d --name webui webui
 
+
+# docker tag webui  acmfimages.azurecr.io/webui
+# docker push acmfimages.azurecr.io/webui
+
 #to inspect
 # docker run -it -p 2001:80  webui /bin/bash
 
