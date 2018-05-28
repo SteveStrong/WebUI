@@ -5,8 +5,10 @@
 export const environment = {
   production: false,
 
+//https://arrowsboxes.azurewebsites.net/api/Other
   // appBaseUrl: 'http://localhost:3000',
-  appBaseUrl: 'https://webapi-develop-acmf.ocp-apps.bahincubator.com'
+  //appBaseUrl: 'https://webapi-develop-acmf.ocp-apps.bahincubator.com'
+  appBaseUrl: 'https://arrowsboxes.azurewebsites.net'
 };
 
 

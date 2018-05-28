@@ -11,14 +11,19 @@ import { environment } from '../environments/environment';
 export class AppComponent implements OnInit {
   serviceURL: string = environment.appBaseUrl;
   title = 'WebUI';
-  url = `${this.serviceURL}/api/values`;
+  url = `${this.serviceURL}`;
   values = {};
+  repos = {};
 
   constructor(private _service: MessageService) {}
 
   ngOnInit() {
     this._service.getValues().subscribe(item => {
       this.values = item;
+    });
+
+    this._service.getRepos().subscribe(item => {
+      this.repos = item;
     });
   }
 }

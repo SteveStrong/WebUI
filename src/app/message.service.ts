@@ -19,6 +19,14 @@ export class MessageService {
       //
     return service;
   }
+
+  getRepos() {
+    const url = `${this.serviceURL}/api/Repos`;
+    const service = this._http
+      .get(url);
+      //
+    return service;
+  }
 }
 
 
